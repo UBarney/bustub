@@ -4,7 +4,7 @@
 
 tasks:
   - name: init
-    init: |
+    before: |
       yes Y |sudo build_support/packages.sh
       # https://clangd.llvm.org/installation#installing-clangd
       sudo apt-get install clangd-12
